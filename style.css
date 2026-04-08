@@ -38,7 +38,7 @@ xxl (≥1400px) */
     min-height: 100vh;
     background-size: cover;
     background-position: center; 
-    background-image: url(../img/photo_2026-03-11_22-42-35.jpg);
+    background-image: url(image/photo_2026-03-11_22-42-35.jpg);
 }
 .navbar-nav .nav-item, .icons{
     padding-left: 10px;
