@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="java.js"> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>   -->
+     
+
+    
+
+</head>
+<body >
+    <section class="back">
+        <nav class="navbar navbar-expand-lg sticky-top bg-dark">
+            <div class="container">            
+                <h1 class="navbar-brand text-white w-25" href="#">Feane</h1>
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon btn btn-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link active  fs-xs-2" href="#">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link  fs-xs-2" href="menu.html">MENU</a></li>
+                        <li class="nav-item"><a class="nav-link  fs-xs-2" href="about.html">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link  fs-xs-2" href="book.html">BOOK TABLE</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3 icons">
+                        <a href="" class="icon-link"><i class="bi bi-person-fill text-white"></i></a>
+                        <a href="" class="icon-link"><i class="bi bi-cart-fill text-white"></i></a>
+                        <a href="" class="icon-link"><i class="bi bi-search text-white"></i></a>
+                        <a href="#" class="btn btn-warning px-4 rounded-5 text-light">Order Online</a>
+                    </div>                        
+                </div>      
+            </div>
+        </nav>
+         <div id="hero" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container hero">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 text-white"> 
+                                <h1 class="title">Fast Food Restaurant</h1>     <br>    
+                                <p> Doloremque, itaque aperiam facilis rerum, commodi,
+                                    temporibus sapiente ad mollitia laborum quam quisquam
+                                    esse error under Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                </p> <br>
+                                <button class="btn btn-warning px-5 py-2 rounded-pill">Order Now</button>             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="container hero">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 text-white">
+                                <h1 class="title">Fast Food Restaurant</h1>      <br>   
+                                <p> Doloremque, itaque aperiam facilis rerum, commodi,
+                                    temporibus sapiente ad mollitia laborum quam quisquam
+                                    esse error under Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                </p><br>
+                                <button class="btn btn-warning px-5 py-2 rounded-pill">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="container hero">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 text-white">
+                                <h1 class="title">Fast Food Restaurant</h1>  <br>       
+                                <p> Doloremque, itaque aperiam facilis rerum, commodi,
+                                    temporibus sapiente ad mollitia laborum quam quisquam
+                                    esse error under Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                </p> <br>
+                                <button class="btn btn-warning px-5 py-2 rounded-pill">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="promo-container" data-aos="fade-up">
+            <div class="promo-card">
+                <div class="promo-img">
+                    <img src="../img/image copy 24.png" alt="">
+                </div>
+                <div class="promo-text">
+                    <h3>Tasty Thursdays</h3>
+                    <h2>20% <span>Off</span></h2>
+                    <button class="promo-btn">Order Now 🛒</button>
+                </div>
+            </div>
+            <div class="promo-card">
+                <div class="promo-img">
+                    <img src="../img/image copy 24.png" alt="">
+                </div>
+                <div class="promo-text">
+                    <h3>Pizza Days</h3>
+                    <h2>15% <span>Off</span></h2>
+                    <button class="promo-btn">Order Now 🛒</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-aos="fade-up">
+        <div class="select-manu">
+            <div class="our">
+                <h1 class="our">Our Manus</h1>
+            </div>
+            <div>
+                <!-- <ul class="choose-manu">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Burger</a></li>
+                    <li><a href="#">Pizza</a></li>
+                    <li><a href="#">Pasta</a></li>
+                    <li><a href="#">Fries</a></li>
+                </ul> -->
+                <ul class="choose-manu">
+                    <li><a href="#" data-category="all">All</a></li>
+                    <li><a href="#" data-category="burger">Burger</a></li>
+                    <li><a href="#" data-category="pizza">Pizza</a></li>
+                    <li><a href="#" data-category="pasta">Pasta</a></li>
+                    <li><a href="#" data-category="fries">Fries</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="container scrolls" data-aos="fade-up">
+        <main class="row">
+            <div class="col-12 col-lg-4 col-md-6 card-all" id="products">
+                
+            </div>
+            
+        </main>
+        <div class="d-flex justify-content-center align-content-center">
+            <a href="" class="btn btn-warning rounded-5 px-5 py-1 m-5 text-light fs-5 ">View More</a>
+        </div>
+    </section>
+    <section>
+        <div class="WAFeane">
+            <div class="left">
+                <img src="image/image.png" alt="">
+            </div>
+            <div class="right">
+                <h1 class="my-lg-5 We">We Are Feane</h1>
+                <p class="my-lg-5">There are many variations of passages of Lorem Ipsum available, 
+                    but the majority have suffered alteration in some form, by injected humour, 
+                    or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, 
+                    you need to be sure there isn't anything embarrassing hidden in the middle of text. All
+                </p>
+                <button class="btn btn-warning px-5 py-2 rounded-pill text-light ">Order Now</button>
+            </div>
+        </div>
+    </section>
+    <section >
+        <main class="container">
+            <div class="book row g-4 align-items-start">       
+                <div class="form-left col-12 col-lg-6">   
+                    <h1 class="book-t">Book A Table</h1> 
+                    <form class="d-flex flex-column gap-3 mt-4">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <select name="" id="" class="form-select" >
+                            <option value="" selected disabled>How many persons?</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                        <input type="date" class="form-control" placeholder="mm/dd/yyyy">
+                        <button class="btn btn-warning w-50 rounded-5 mt-4 text-white py-2">BOOK NOW</button>
+                    </form>
+                </div>
+                <div class="map-right col-12 col-lg-6 col-md-6">
+                    <iframe src="https://www.google.com/maps?q=Phnom+Penh&output=embed" frameborder="0" loading="lazy" z></iframe>
+                </div>
+            </div>
+        </main>
+    </section>
+    <div class="mt-5 pt-5">
+        <h1 class="text-center says">What Says Our Customers</h1>
+    </div>
+    <section> 
+        <main class="container">
+            <div class="row cmt g-4 align-items-start">
+                <div class="cmt-left col-12 col-lg-6">
+                    <div class="cmt-title">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cupiditate esse harum repellat, quisquam consequuntur omnis tenetur provident 
+                            laborum eligendi odio?
+                        </p>
+                        <h2>Saray</h2>
+                        <p>manga aliqua</p>
+                    </div>
+
+                    <div class="image-cus">
+                        <div class="arrows"></div>
+                        <div class="averta-ar">
+                            <img src="image/image copy.png" alt="">
+                        </div>  
+                    </div>
+
+                </div>
+                <div class="cmt-right col-12 col-lg-6">
+                     <div class="cmt-title ">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cupiditate esse harum repellat, quisquam consequuntur omnis 
+                            tenetur provident laborum eligendi odio?
+                        </p>
+                        <h2>Sarith</h2>
+                        <p>manga aliqua</p>
+                    </div>
+                    <div class="image-cus">
+                        <div class="arrows"></div>
+                        <div class="averta-ar">
+                            <img src="image/image copy 2.png" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </section>
+    <section class="footer">
+        <main class="container mt-5">
+            <div class="row information">
+                <div class="left-info col-12 col-lg-4 col-md-4 d-flex flex-column row-gap-2 text-center">
+                    <h2 class="mb-4 mt-5 Conta">Contact Us</h2>
+                    <a href="" class="text-light-emphasis"><span><i class="bi bi-geo-alt-fill"></i></span> Location</a>
+                    <a href="" class="text-light-emphasis"><span><i class="bi bi-telephone-fill"></i></span> Call +01 1234567890</a>
+                    <a href="" class="text-light-emphasis"><span><i class="bi bi-envelope-fill"></i></span> Email</a>
+                    
+                </div>
+                <div class="midlle-info col-12 col-lg-4 col-md-4 text-center">
+                    <h2 class="logo-footer mb-4 mt-5">Feane</h2>
+                    <p class="text-light-emphasis">
+                        Necessary, making this the first true generator on the Internet. 
+                        It uses a dictionary of over 200 Latin words, combined with
+                    </p>
+                    <div class="justify-content-center column-gap-3 d-flex icons">
+                        <a href="" class="text-light-emphasis"><span><i class="bi bi-facebook"></i></span></a>
+                        <a href="" class="text-light-emphasis"><span><i class="bi bi-instagram"></i></span></a>
+                        <a href="" class="text-light-emphasis"><span><i class="bi bi-twitter"></i></span></a>
+                        <a href="" class="text-light-emphasis"><span><i class="bi bi-pinterest"></i></span></a>
+                        <a href="" class="text-light-emphasis"><span><i class="bi bi-linkedin"></i></span></a>
+                    </div>
+                </div>
+                <div class="right-info col-12 col-lg-4 col-md-4 text-center ">
+                    <h2 class="mb-4 mt-5 Open">Opening Hours</h2>
+                    <p class="text-light-emphasis">Everyday</p>
+                    <p class="text-light-emphasis">10.00 Am -10.00 Pm</p>
+                </div>
+            </div>
+            <div class="text-center mt-5 mb-0">
+                <p class="text-light-emphasis">&copy;2026 All Rights Reserved By Free Html Templates</p>
+                <p class="text-light-emphasis mb-0 pb-3">&copy;Distributed By ThemeWagon</p>
+            </div>
+        </main>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="java.js"></script>
+</body>
+</html>
