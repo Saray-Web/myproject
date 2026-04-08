@@ -1,14 +1,10 @@
-let url = "http://localhost:3000/cards"
-let demo = document.getElementById('products')
-let menus = document.querySelectorAll('.choose-manu a')
-let allData = []
-
-
-async function fetchdata(data){
-    const response = await axios.get(url)
-    let cards = data || response.data
-    if(!data) allData = cards 
-    demo.innerHTML = ''
+import { cardsData } from './import.js';
+let demo = document.getElementById('products');
+let menus = document.querySelectorAll('.choose-manu a');
+let allData = cardsData.cards; 
+function fetchdata(data){
+    let cards = data || allData; 
+    demo.innerHTML = '';         
     cards.forEach(element => {
         demo.innerHTML += `
             <div class="cards">
@@ -24,24 +20,20 @@ async function fetchdata(data){
                     </div>
                 </div>
             </div>
-        `
+        `;
     });
 }
-fetchdata()
-
+fetchdata(allData);
 menus.forEach(element => {
     element.addEventListener('click', function(e){
-        e.preventDefault()
-        let category = this.dataset.category
+        e.preventDefault();
+        let category = this.dataset.category;
 
         if(category === 'all'){
-            fetchdata(allData)
+            fetchdata(allData);
+        } else {
+            let filter = allData.filter(item => item.category === category);
+            fetchdata(filter);
         }
-        else{
-            let filter = allData.filter(item => item.category === category)
-            fetchdata(filter)
-        }
-    })
-})
-
-
+    });
+});

@@ -1,5 +1,5 @@
-{
-  "cards": [
+export const cardsData = {
+  cards: [
     {
       "id": 1,
       "title": "Delicious Pizza",
